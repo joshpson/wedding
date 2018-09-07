@@ -6,6 +6,11 @@ class Nav extends React.Component {
     super(props);
   }
 
+  handleClick = e => {
+    e.preventDefault();
+    this.props.setPage(e.target.name);
+  };
+
   render() {
     return (
       <div className="row nav-header justify-content-center">
@@ -28,27 +33,52 @@ class Nav extends React.Component {
             >
               <ul className="navbar-nav navbar-center">
                 <li className="nav-item">
-                  <a className="nav-link" href="/home" name="home">
+                  <a
+                    className="nav-link"
+                    href="/home"
+                    name="home"
+                    onClick={this.handleClick}
+                  >
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/registry" name="registry">
+                  <a
+                    className="nav-link"
+                    href="/registry"
+                    name="registry"
+                    onClick={this.handleClick}
+                  >
                     Registry
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/location" name="details">
+                  <a
+                    className="nav-link"
+                    href="/location"
+                    name="location"
+                    onClick={this.handleClick}
+                  >
                     Location
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#=/lodging" name="lodging">
+                  <a
+                    className="nav-link"
+                    href="/lodging"
+                    name="lodging"
+                    onClick={this.handleClick}
+                  >
                     Lodging
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/rsvp" name="rsvp">
+                  <a
+                    className="nav-link"
+                    href="/rsvp"
+                    name="rsvp"
+                    onClick={this.handleClick}
+                  >
                     RSVP
                   </a>
                 </li>

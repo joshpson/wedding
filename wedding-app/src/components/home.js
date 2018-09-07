@@ -1,7 +1,7 @@
 import React from "react";
-import "./hero.css";
+import "./home.css";
 
-class Hero extends React.Component {
+class Home extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -21,4 +21,4 @@ class Hero extends React.Component {
   }
 }
 
-export default Hero;
+export default Home;
