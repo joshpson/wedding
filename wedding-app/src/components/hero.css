@@ -1,0 +1,44 @@
+.hero {
+  font-family: "Courgette", cursive;
+  text-align: center;
+  padding-top: 15%;
+  color: white;
+  text-shadow: 2px 2px 0.5px gray;
+}
+
+.hero h1 {
+  margin: 0px;
+  font-size: 80px;
+}
+
+.hero h3 {
+  margin: 0px;
+  font-size: 40px;
+}
+
+.hero-button {
+  margin-top: 20px;
+  font-size: 20px;
+  border-width: 2px;
+  color: #a07984;
+  border-color: white;
+  background-color: white;
+  box-shadow: 1px 1px 0.5px gray;
+}
+
+.hero-button:hover {
+  color: #a07984;
+  background-color: white;
+  box-shadow: 2px 2px 1px gray;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 4em;
+  }
+
+  .hero h3 {
+    font-size: 2em;
+  }
+}
+
