@@ -1,3 +1,7 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
 html {
   height: 100%;
 }
@@ -14,8 +18,19 @@ body {
   padding: 0px;
 }
 
-.navbar {
+.nav-header {
   background-color: rgba(0, 0, 0, 0.35);
+}
+
+.nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
 .hero {
@@ -49,7 +64,6 @@ body {
 .main-button:hover {
   color: #a07984;
   background-color: white;
-
   box-shadow: 2px 2px 1px gray;
 }
 
