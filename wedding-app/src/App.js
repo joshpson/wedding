@@ -5,39 +5,62 @@ import Registry from "./components/registry";
 import Location from "./components/location";
 import Lodging from "./components/lodging";
 import Rsvp from "./components/rsvp";
-
+import { Switch, Route, withRouter } from "react-router-dom";
 import "./App.css";
-
-const pages = {
-  home: <Home />,
-  registry: <Registry />,
-  location: <Location />,
-  lodging: <Lodging />,
-  rsvp: <Rsvp />
-};
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      page: "home"
-    };
   }
 
   setPage = page => {
-    this.setState({
-      page: page
-    });
+    this.props.history.push(page);
   };
 
   render() {
     return (
       <div className="container-fluid wrapper">
-        <Nav setPage={this.setPage} />
-        {pages[this.state.page]}
+        <Nav setPage={this.setPage} history={this.props.history} />
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={props => {
+              return <Home setPage={this.setPage} />;
+            }}
+          />
+          <Route
+            exact
+            path="/registry"
+            render={props => {
+              return <Registry />;
+            }}
+          />
+          <Route
+            exact
+            path="/location"
+            render={props => {
+              return <Location />;
+            }}
+          />
+          <Route
+            exact
+            path="/lodging"
+            render={props => {
+              return <Lodging />;
+            }}
+          />
+          <Route
+            exact
+            path="/rsvp"
+            render={props => {
+              return <Rsvp />;
+            }}
+          />
+        </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);

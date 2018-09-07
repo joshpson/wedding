@@ -4,9 +4,19 @@ import "./nav.css";
 class Nav extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      navCollapsed: true
+    };
   }
 
+  toggleNav = () => {
+    this.setState({
+      navCollapsed: !this.state.navCollapsed
+    });
+  };
+
   handleClick = e => {
+    this.toggleNav();
     e.preventDefault();
     this.props.setPage(e.target.name);
   };
@@ -25,18 +35,21 @@ class Nav extends React.Component {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon" />
+              <span className="navbar-toggler-icon" onClick={this.toggleNav} />
             </button>
             <div
-              className="collapse navbar-collapse justify-content-center"
+              className={
+                (this.state.navCollapsed ? "collapse" : "") +
+                " navbar-collapse justify-content-center"
+              }
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav navbar-center">
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    href="/home"
-                    name="home"
+                    href="/"
+                    name="/"
                     onClick={this.handleClick}
                   >
                     Home

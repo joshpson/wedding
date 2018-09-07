@@ -1,0 +1,26 @@
+.rsvp-wrapper {
+  max-width: 600px;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .rsvp-wrapper {
+    max-width: 600px;
+    margin-top: 5%;
+    padding: 0px;
+  }
+}
+
+.loading {
+  position: fixed;
+  z-index: 999;
+  height: 10em;
+  width: 10em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

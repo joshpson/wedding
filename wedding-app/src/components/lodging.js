@@ -1,4 +1,5 @@
 import React from "react";
+import "./lodging.css";
 
 class Lodging extends React.Component {
   constructor(props) {

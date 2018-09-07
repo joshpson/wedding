@@ -1,4 +1,5 @@
 import React from "react";
+import "./registry.css";
 
 class Registry extends React.Component {
   constructor(props) {
