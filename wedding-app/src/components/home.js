@@ -10,7 +10,7 @@ class Home extends React.Component {
     return (
       <div className="hero">
         <h1>Kelly & Josh</h1>
-        <h3>June, 15th 2019</h3>
+        <h3>Saturday, June 15, 2019</h3>
         <div className="text-center">
           <button
             type="button"

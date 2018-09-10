@@ -1,33 +1,33 @@
 .hero {
-  font-family: "Courgette", cursive;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 10%;
   color: white;
-  text-shadow: 2px 2px 0.5px gray;
+  text-shadow: 2px 2px 0.5px grey;
 }
 
 .hero h1 {
   margin: 0px;
-  font-size: 80px;
+  font-size: 100px;
 }
 
 .hero h3 {
   margin: 0px;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .hero-button {
   margin-top: 20px;
   font-size: 20px;
+  width: 175px;
   border-width: 2px;
-  color: #a07984;
+  color: #00415f;
   border-color: white;
   background-color: white;
-  box-shadow: 1px 1px 0.5px gray;
+  box-shadow: 1px 1px 0.5px grey;
 }
 
 .hero-button:hover {
-  color: #a07984;
+  color: #a4dde5;
   background-color: white;
   box-shadow: 2px 2px 1px gray;
 }
@@ -41,4 +41,3 @@
     font-size: 2em;
   }
 }
-
