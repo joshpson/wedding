@@ -5,6 +5,7 @@ import Registry from "./components/registry";
 import Location from "./components/location";
 import Lodging from "./components/lodging";
 import Rsvp from "./components/rsvp";
+import Activities from "./components/activities";
 import { Switch, Route, withRouter } from "react-router-dom";
 import "./App.css";
 
@@ -55,6 +56,13 @@ class App extends Component {
             path="/rsvp"
             render={props => {
               return <Rsvp />;
+            }}
+          />
+          <Route
+            exact
+            path="/activies"
+            render={props => {
+              return <Activities />;
             }}
           />
         </Switch>

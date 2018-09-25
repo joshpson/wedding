@@ -1,17 +1,17 @@
 import React from "react";
-import "./activies.css";
+import "./activities.css";
 
-class Activies extends React.Component {
+class Activities extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <div className="activies-container container">
+      <div className="activities-container container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <h1>Things To Do</h1>
+            <h1>Explore DC</h1>
             <p className="location-description">Details to come.</p>
           </div>
         </div>
@@ -20,4 +20,4 @@ class Activies extends React.Component {
   }
 }
 
-export default Activies;
+export default Activities;

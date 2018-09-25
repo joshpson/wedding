@@ -66,7 +66,7 @@ class Nav extends React.Component {
                     Location
                   </a>
                 </li>
-                             <li className="nav-item">
+                <li className="nav-item">
                   <a
                     className="nav-link"
                     href="/lodging"
@@ -84,6 +84,16 @@ class Nav extends React.Component {
                     onClick={this.handleClick}
                   >
                     Registry
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="/activies"
+                    name="activies"
+                    onClick={this.handleClick}
+                  >
+                    Explore DC
                   </a>
                 </li>
                 <li className="nav-item">
