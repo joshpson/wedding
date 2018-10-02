@@ -79,9 +79,8 @@ class Nav extends React.Component {
                 <li className="nav-item">
                   <a
                     className="nav-link"
-                    href="/registry"
+                    href="https://registry.theknot.com/josh-pearson-kelly-mallahan-june-2019-dc/24480867"
                     name="registry"
-                    onClick={this.handleClick}
                   >
                     Registry
                   </a>

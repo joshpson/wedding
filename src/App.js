@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Nav from "./components/nav";
 import Home from "./components/home";
-import Registry from "./components/registry";
 import Location from "./components/location";
 import Lodging from "./components/lodging";
 import Rsvp from "./components/rsvp";
@@ -30,13 +29,7 @@ class App extends Component {
               return <Home setPage={this.setPage} />;
             }}
           />
-          <Route
-            exact
-            path="/registry"
-            render={props => {
-              return <Registry />;
-            }}
-          />
+
           <Route
             exact
             path="/location"
