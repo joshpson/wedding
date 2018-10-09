@@ -36,7 +36,7 @@ class Rsvp extends React.Component {
           frameBorder="0"
           marginHeight="0"
           marginWidth="0"
-        />
+        />*/}
       </div>
     );
   }
